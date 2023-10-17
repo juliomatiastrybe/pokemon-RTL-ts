@@ -25,6 +25,7 @@ describe('Testa o componente <FavoritePokemon.tsx />', () => {
     expect(imgFav).toBeInTheDocument();
     // navega para FavoritePokemon
     await user.click(screen.getByRole('link', { name: 'Favorite Pokémon' }));
+    // verifica se tem pokemons favoritos
     const favorites = screen.getAllByTestId('pokemon-name');
     expect(favorites[0]).toBeInTheDocument();
   });
