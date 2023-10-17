@@ -22,7 +22,6 @@ describe('Testa o componente <About.tsx />', () => {
       const srcStandard = 'https://cdn2.bulbagarden.net/upload/thumb/8/86/Gen_I_Pok%C3%A9dex.png/800px-Gen_I_Pok%C3%A9dex.png';
       const imgPokedex = screen.getByRole('img');
       const srcValueImg = imgPokedex.getAttribute('src');
-      console.log(srcValueImg);
       expect(srcValueImg).toBe(srcStandard);
     });
   });
