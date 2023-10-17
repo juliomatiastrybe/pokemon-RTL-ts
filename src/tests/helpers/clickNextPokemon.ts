@@ -1,11 +1,11 @@
 import userEvent from '@testing-library/user-event';
 
 export const clickNextPokemon = async (
-  iterations: number,
+  lengthList: number,
   btnNext: HTMLElement,
 ) => {
-  if (iterations > 0) {
+  if (lengthList > 0) {
     await userEvent.click(btnNext);
-    await clickNextPokemon(iterations - 1, btnNext);
+    await clickNextPokemon(lengthList - 1, btnNext);
   }
 };
